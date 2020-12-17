@@ -11,10 +11,10 @@ An object of class \code{SurveySim} of length 10.
 ParametersExample
 }
 \description{
-A test of parameters for SurveySim
+A test of parameters for \code{SurveySim()}
 }
 \details{
-This is just a test list of paramaters to be used as an example in SurveySim.
+This is just a test list of parameters to be used as an example in \code{SurveySim()}.
 
 The values of this parameters are:
 

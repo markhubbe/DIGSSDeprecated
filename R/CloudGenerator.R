@@ -2,10 +2,10 @@
 #'
 #' Creates a cloud of dots inside ellipsoid sites
 #'
-#' @details `cloudGenerator` creates a cloud of point inside a ellipsoid site of predefined
+#' @details `cloudGenerator` creates a cloud of point inside an ellipsoid site of predefined
 #' size and shape, to represent the locations of artifacts in a site. The function can build artifact scatters
-#' with different densities profiles. The function uses a "onion-layer" approach to approximate the density of points from the center.
-#' In practice, it means that each site is composed of N ellipse slices surrounding the previous slices, with each slice
+#' with different densities profiles. The function uses an "onion-layer" approach to approximate the density of points from the center.
+#' In practice, it means that each site is composed of N ellipse slices surrounding the previous slice, with each slice
 #' having a different artifact density depending on the density function selected. This approach also makes
 #' the `SurveySim` function more efficient, since it will search for artifact hits only on the slices that intersect the
 #' survey pits.
@@ -15,7 +15,7 @@
 #' @param angle ellipse (site) angle of rotation in radians
 #' @param center.x center of ellipse in x axis
 #' @param center.y center of ellipse in y axis
-#' @param type type of density distribution distribution. Choose from:
+#' @param type type of density distribution. Choose from:
 #'
 #'  `uniform`: dots are uniformly distributed within ellipsis
 #'

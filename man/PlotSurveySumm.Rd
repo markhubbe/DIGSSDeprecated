@@ -7,7 +7,7 @@
 PlotSurveySumm(SummaryList, plot = "sites.found", labels = NULL)
 }
 \arguments{
-\item{SummaryList}{a list of survey summaries, the output of \code{SurveySim}}
+\item{SummaryList}{a list of survey summaries, the output of \code{SurveySim()}}
 
 \item{plot}{what variable to plot. Options are:
 
@@ -15,7 +15,7 @@ PlotSurveySumm(SummaryList, plot = "sites.found", labels = NULL)
 
 \code{survey.hits} - plots frequency of surveys that hit a site
 
-\code{success.rate.index} - plots the success rate of surveys = the ratio of successful surveys over total surveys
+\code{success.rate.index} - plots the success rate of surveys, i.e. the ratio of successful surveys over total surveys
 
 \code{sites.found.ARTI} - plots frequency of sites found \strong{based on artifact present in sites}
 
@@ -24,12 +24,12 @@ PlotSurveySumm(SummaryList, plot = "sites.found", labels = NULL)
 \item{labels}{vector with name of each item in list, to be added to the legend. If \code{NULL}, names will be taken from list}
 }
 \description{
-Plots the different results from \code{SurveySim}
+Plots the different results from \code{SurveySim()}
 }
 \details{
 This function will plot the results of the \code{SurveySim} Simulations using Kernel Density plots.
 All the grids that want to be compared should be grouped into 1 list (list(a,b,c,etc...))
-The plot function allow you to chose from different parts of the survey summaries that are produced by \code{SurveySim} you want to plot.
+The plot function allows you to choose from different parts of the survey summaries that are produced by \code{SurveySim()} you want to plot.
 }
 \examples{
  #create 3 Simulations with sites of different sizes:

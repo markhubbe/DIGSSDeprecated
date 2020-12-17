@@ -8,16 +8,16 @@
 #'@param artifact.analysis Includes the analysis of artifacts in sites. Can be very time-consuming for mid-high artifact densities. Default = `TRUE`
 #'@param plot If `TRUE` the last iteration of the simulations will be plotted.
 #'@param plot.artifacts If `TRUE` the artifacts in each site will be plotted. Default = `FALSE` because it is resource intensive for mid-high densities.
-#'@param areaprecision Area covered by sites is approximated by a cookie-cutter approach. Precision = `1000`
-#'gives approximate area within 1% error. Higher values reduce error, but are more resource intensive.
+#'@param areaprecision Area covered by sites is approximated by a cookie-cutter approach. Default precision = `1000`
+#'gives approximate area within 1% error. Higher values reduce error but are more resource intensive.
 #'@examples
-#'#Runs simulations based on ParametersExample
+#'#Runs simulations based on `ParametersExample`
 #'SurveySim(ParametersExample)
 #'
 #'#Edit ParametersExample to have 50 simulations and then run simulations
 #'tmp_parameters <-ParametersExample
 #'tmp_parameters$simulations<-50
-#'SurveySim(ParameterExample)
+#'SurveySim(tmp_parameters)
 #'
 #'@export
 

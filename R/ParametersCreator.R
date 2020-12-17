@@ -4,23 +4,24 @@
 #'
 #'@details
 #'This function will create a user text interface to define all the arguments required
-#'by the SurveySim function. It generates a list of class 'SurveySim'.
+#'by the SurveySim function. It generates a list of class `SurveySim()`.
 #'All parameters are loaded inside the function.
 #'
 #'@param col.width the space between columns in the grid IN METERS
 #'@param grid.type options are: "square","rectangle","staggered","hexagonal","arbitrary.staggered", following Kintigh 1988
-#'@param simulations number of random map to be created and contrasted with the grids
-#'@param Area vector with horizontal and vertical size of area surveyed in km.
+#'@param simulations number of random maps to be created and contrasted with the grids
+#'@param Area vector with horizontal and vertical size of area surveyed in km
 #'OBS: Sites will all be ellipses with radii not too different and random angles
-#'@param SiteDensity measures as number of sites/km2 can be either one value or a vector with 2 values (min and max) to create a range of densities
+#'@param SiteDensity measured as number of sites/km^2. Can be either one value or a vector with 2 values (min and max) to create a range of densities
 #'@param site.area it will be one of two options: 1. one value indicating the area of all sites, in meter^2;
 #' or 2. a vector with 4 values: min, max, mean (or median), and standard deviation in meter^2
-#'@param overlap maximum overlap of site area, ranging from 0 as no overlap to 1 as complete overlap
-#'@param obj.density artifacts per m^2. Can be a single value (uniform for all sites), or a range of values defined as min and max
+#'@param overlap maximum overlap of site area, ranging from 0 = no overlap allowed to 1 = complete overlap possible
+#'@param obj.density artifacts per m^2. Can be a single value (uniform for all sites) or a range of values defined as min and max
 #'@param obj.distribution type of cloud distribution for artifacts inside sites. Choose from: 'uniform', 'linear', 'spherical', 'sinusoidal'
 #'@param survey.radius the radius of the survey pit (assumed to be a circle)
 #'@references
-#'Kintigh (1988) XXX
+#'Kintigh (1988) The Effectiveness of Subsurface Testing: A Simulation Approach.
+#'American Antiquity, 53:686-707.
 #'@examples
 #'ParametersCreator()
 

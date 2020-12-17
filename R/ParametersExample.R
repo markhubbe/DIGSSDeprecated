@@ -1,9 +1,9 @@
 #'Parameters Example
 #'
-#'A test of parameters for SurveySim
+#'A test of parameters for `SurveySim()`
 #'
 #' @details
-#' This is just a test list of paramaters to be used as an example in SurveySim.
+#' This is just a test list of parameters to be used as an example in `SurveySim()`.
 #' @details The values of this parameters are:
 #' @details Width between survey lines (`col.width`) = **50 m**
 #' @details Type of survey grid (`grid.type`) = **hexagonal**
@@ -18,6 +18,7 @@
 #'
 #' @usage
 #' ParametersExample
+
 #'
 #'@export
 ParametersExample<-list("col.width"=50,"grid.type"="hexagonal","simulations"=25,"area"=c(0.5,0.5),

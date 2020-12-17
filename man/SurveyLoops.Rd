@@ -9,11 +9,11 @@ SurveyLoops(SurveyParameters, LoopVariable, LoopSequence, PlotResult)
 \arguments{
 \item{SurveyParameters}{list of parameters (object class \code{SurveySim})}
 
-\item{LoopVariable}{variable to be looped. can be any of the variables that exist in \code{SurveyParameters}
+\item{LoopVariable}{variable to be looped. Can be any of the variables that exist in \code{SurveyParameters}
 
 \code{col.width} - vector of numbers with distances between STP rows
 
-\code{grid.type} - vector of characters with names of grid types
+\code{grid.type} - vector of strings with names of grid types
 
 \code{simulations} - vector of numbers with numbers of simulations
 
@@ -45,16 +45,16 @@ SurveyLoops(SurveyParameters, LoopVariable, LoopSequence, PlotResult)
 \code{SuccessRateIndex} - plots the success rate index (ratio of survey pits that found a site over total number of survey pits made)}
 }
 \description{
-Perform multiple surveys changing values on one variable and plot results
+Perform multiple survey simulations changing values on one variable and plot the results
 }
 \details{
 \code{SurveyLoops} will run a series of simulations along one variable with values
 provided by user. Through this function, the user can simulate and evaluate the changes
 in efficiency and efficacy of specific variables, while holding every other value constant. The function
-runs multiple instances of \code{SurveySim} from the values of \code{SurveyParameters} and overrided it with values offered by the user.
+runs multiple instances of \code{SurveySim} from the values of \code{SurveyParameters} and overrides it with values offered by the user.
 }
 \examples{
-#Loop the impact of a increasing distance between survey rows
+#Loop the impact of increasing distances between survey rows
 width.loop<-SurveyLoops(ParametersExample,"col.width",c(25,50,75,100,125,150),"SitesFound")
 
 #Loop the impact of different artifact distributions on surveys

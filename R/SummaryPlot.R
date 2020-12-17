@@ -1,19 +1,19 @@
 #' Plot Survey Summaries
 #'
-#' Plots the different results from `SurveySim`
+#' Plots the different results from `SurveySim()`
 #'
 #' @details This function will plot the results of the `SurveySim` Simulations using Kernel Density plots.
 #' All the grids that want to be compared should be grouped into 1 list (list(a,b,c,etc...))
-#' The plot function allow you to chose from different parts of the survey summaries that are produced by `SurveySim` you want to plot.
+#' The plot function allows you to choose from different parts of the survey summaries that are produced by `SurveySim()` you want to plot.
 #'
-#' @param SummaryList a list of survey summaries, the output of `SurveySim`
+#' @param SummaryList a list of survey summaries, the output of `SurveySim()`
 #' @param plot what variable to plot. Options are:
 #'
 #'   `sites.found` - plots frequency of sites found
 #'
 #'   `survey.hits` - plots frequency of surveys that hit a site
 #'
-#'   `success.rate.index` - plots the success rate of surveys = the ratio of successful surveys over total surveys
+#'   `success.rate.index` - plots the success rate of surveys, i.e. the ratio of successful surveys over total surveys
 #'
 #'   `sites.found.ARTI` - plots frequency of sites found **based on artifact present in sites**
 #'
