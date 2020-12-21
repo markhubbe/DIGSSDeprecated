@@ -19,9 +19,9 @@ Default value = \code{1000} (1 million dots projected)}
 Estimate the area of multiple overlapping ellipses
 }
 \details{
-This function will estimate the area occupied by sites (ellipses) in a quadrangular
+This function will estimate the area occupied by sites (ellipses) in a rectangular
 field, taking into consideration the fact that sites can overlap. It is formatted to be used inside
-\code{FieldMap()}
+\code{FieldMap()}.
 
 This function is a cookie-cutter area estimator, given the complexities of
 calculating the real areas of overlapping ellipses. It projects N x N equally spaced dots in the survey field
@@ -29,7 +29,7 @@ and calculates the ratio of how many of them fall inside at least one site (elli
 it approximates area to within 0.1\% of real area.
 }
 \examples{
- #create a matrix with 2 sites randomly located using `FielMap`)
+ #create a matrix with 2 sites randomly located using `FieldMap()`
  site.example<-FieldMap(c(1,1),2,250000,plot=TRUE)
 
  #define size of field
@@ -37,6 +37,5 @@ it approximates area to within 0.1\% of real area.
 
  #calculate area
  AreaEstimator(site.example$site.frame,field.area)
-
 
 }

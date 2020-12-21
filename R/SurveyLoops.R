@@ -6,7 +6,7 @@
 #' `SurveyLoops` will run a series of simulations along one variable with values
 #'  provided by user. Through this function, the user can simulate and evaluate the changes
 #'  in efficiency and efficacy of specific variables, while holding every other value constant. The function
-#'  runs multiple instances of `SurveySim` from the values of `SurveyParameters` and overrides it with values offered by the user.
+#'  runs multiple instances of `SurveySim` using values of `SurveyParameters` and replacing one of them with a sequence of values offered by the user.
 #'
 #' @param SurveyParameters list of parameters (object class `SurveySim`)
 #'

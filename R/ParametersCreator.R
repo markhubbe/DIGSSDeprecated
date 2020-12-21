@@ -13,7 +13,7 @@
 #'@param Area vector with horizontal and vertical size of area surveyed in km
 #'OBS: Sites will all be ellipses with radii not too different and random angles
 #'@param SiteDensity measured as number of sites/km^2. Can be either one value or a vector with 2 values (min and max) to create a range of densities
-#'@param site.area it will be one of two options: 1. one value indicating the area of all sites, in meter^2;
+#'@param site.area can be one of two options: 1. one value indicating the area of all sites, in meter^2;
 #' or 2. a vector with 4 values: min, max, mean (or median), and standard deviation in meter^2
 #'@param overlap maximum overlap of site area, ranging from 0 = no overlap allowed to 1 = complete overlap possible
 #'@param obj.density artifacts per m^2. Can be a single value (uniform for all sites) or a range of values defined as min and max

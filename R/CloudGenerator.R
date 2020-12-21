@@ -17,16 +17,16 @@
 #' @param center.y center of ellipse in y axis
 #' @param type type of density distribution. Choose from:
 #'
-#'  `uniform`: dots are uniformly distributed within ellipsis
+#'  `uniform`: dots are uniformly distributed within ellipse
 #'
-#'  `linear`: dots' density decrease linearly from center
+#'  `linear`: density of dots decreases linearly from center
 #'
-#'  `spherical`: dots' density decrease following elliptical function (abrupt drop near margins)
+#'  `spherical`: density of dots decreases following elliptical function (abrupt drop near margins)
 #'
-#'  `sinusoidal`: dots' density decrease following sinusoidal equation
+#'  `sinusoidal`: density of dots decreases following sinusoidal equation
 #'
 #' @param precision how many slices of the distribution will be made (more = much slower run times). Default = `30`
-#' @param plot if function should plot results. **It does not work outside `SurveySim`**
+#' @param plot if function should plot results. **function does not work outside `SurveySim()`**
 #'
 #' @examples
 #'    #create a small site with low density uniform distribution

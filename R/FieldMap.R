@@ -2,9 +2,9 @@
 #'
 #' Creates randomly placed ellipsoid sites in a rectangular field.
 #'
-#' @details `FieldMap` creates and plots randomly placed ellipses that represent
+#' @details `FieldMap` creates and plots randomly placed ellipses representing
 #' archaeological sites. The sites are created inside a user-defined rectangle, with random positions
-#' and random rotations. It allows also to control how much overlap is accepted between sites.
+#' and random rotations. It allows also to control how of overlap between sites.
 #'
 #' @param  Area vector with horizontal and vertical size `(hor,ver)` of area surveyed in km.
 #' @param  site.density number of sites/km^2. Can be one constant value or vector with two values `(min, max)` to
@@ -21,6 +21,7 @@
 #' @examples
 #' #example of map with 8 sites or variable areas and partial overlap
 #' field.example<-FieldMap(Area=c(1,1),site.density=8,site.area=c(50000,250000,150000,50000),overlap=0.5,plot=TRUE)
+#'
 #' @export
 
 FieldMap<-function(Area,site.density,site.area,overlap=0.50,plot=FALSE,areaprecision=1000){

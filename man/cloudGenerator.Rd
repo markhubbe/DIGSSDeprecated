@@ -31,17 +31,17 @@ cloudGenerator(
 
 \item{type}{type of density distribution. Choose from:
 
-\code{uniform}: dots are uniformly distributed within ellipsis
+\code{uniform}: dots are uniformly distributed within ellipse
 
-\code{linear}: dots' density decrease linearly from center
+\code{linear}: density of dots decreases linearly from center
 
-\code{spherical}: dots' density decrease following elliptical function (abrupt drop near margins)
+\code{spherical}: density of dots decreases following elliptical function (abrupt drop near margins)
 
-\code{sinusoidal}: dots' density decrease following sinusoidal equation}
+\code{sinusoidal}: density of dots decreases following sinusoidal equation}
 
 \item{precision}{how many slices of the distribution will be made (more = much slower run times). Default = \code{30}}
 
-\item{plot}{if function should plot results. \strong{It does not work outside \code{SurveySim}}}
+\item{plot}{if function should plot results. \strong{function does not work outside \code{SurveySim()}}}
 }
 \description{
 Creates a cloud of dots inside ellipsoid sites

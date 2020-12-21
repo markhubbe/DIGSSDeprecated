@@ -28,8 +28,8 @@ Plots the different results from \code{SurveySim()}
 }
 \details{
 This function will plot the results of the \code{SurveySim} Simulations using Kernel Density plots.
-All the grids that want to be compared should be grouped into 1 list (list(a,b,c,etc...))
-The plot function allows you to choose from different parts of the survey summaries that are produced by \code{SurveySim()} you want to plot.
+All the grids that are to be compared should be grouped into 1 list (list(a,b,c,etc...))
+The plot function allows you to choose different parts of the survey summaries produced by \code{SurveySim()} you want to plot.
 }
 \examples{
  #create 3 Simulations with sites of different sizes:

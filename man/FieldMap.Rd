@@ -34,11 +34,12 @@ are normally distributed based on mean and stdev, but within the range of min an
 Creates randomly placed ellipsoid sites in a rectangular field.
 }
 \details{
-\code{FieldMap} creates and plots randomly placed ellipses that represent
+\code{FieldMap} creates and plots randomly placed ellipses representing
 archaeological sites. The sites are created inside a user-defined rectangle, with random positions
-and random rotations. It allows also to control how much overlap is accepted between sites.
+and random rotations. It allows also to control how of overlap between sites.
 }
 \examples{
 #example of map with 8 sites or variable areas and partial overlap
 field.example<-FieldMap(Area=c(1,1),site.density=8,site.area=c(50000,250000,150000,50000),overlap=0.5,plot=TRUE)
+
 }
